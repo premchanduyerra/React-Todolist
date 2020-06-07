@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//CHALLENGE: I have extracted the Input Area, including the <input> and
+//<button> elements into a seperate Component called InputArea.
+//Your job is to make the app work as it did before but this time with the
+//InputArea as a seperate Component.
+
+// DO NOT: Modify the ToDoItem.jsx
+// DO NOT: Move the input/button elements back into the App.jsx
+
+//Hint 1: You will need to think about how to manage the state of the input element
+//in InputArea.jsx.
+//Hint 2: You will need to think about how to pass the input value back into
+//the addItem() function in App.jsx.
