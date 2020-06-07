@@ -20,7 +20,7 @@ function App() {
     setInputText("")
     axios({
       method: 'post',
-      url: 'https://powerful-mesa-61933.herokuapp.com//add',
+      url: 'https://serene-journey-37497.herokuapp.com/add',
       data: qs.stringify(body),
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -44,7 +44,7 @@ function App() {
     setInputText("")
     axios({
       method: 'delete',
-      url: 'https://powerful-mesa-61933.herokuapp.com/delete',
+      url: 'https://serene-journey-37497.herokuapp.com/delete',
       data: qs.stringify(body),
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -68,7 +68,7 @@ function App() {
 
   useEffect(function () {
 
-    axios.get('https://powerful-mesa-61933.herokuapp.com/a')
+    axios.get('https://serene-journey-37497.herokuapp.com/a')
       .then(function (response) {
         var getData = [];
         var names = [];
